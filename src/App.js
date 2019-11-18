@@ -59,7 +59,7 @@ class App extends Component {
     let newItemData = {
       name: name,
       salary: `${salary}`,
-      incomeTax : `${monthlyTax}`
+      incomeTax : `${incomeTax}`
     };
     //set state for newItemData object
     newItemData !== "" &&
