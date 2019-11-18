@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Button, Table, Input, Form, FormGroup, Label } from '@material-ui/core';
+import { Button, Table, Input, FormGroup, Label } from '@material-ui/core';
 
 class App extends Component {
   constructor(props) {
@@ -139,7 +139,7 @@ class App extends Component {
         <h1>Income Tax Calculator</h1>
         <br />
         {/* form for salary input */}
-        <Form>
+        <form>
           <FormGroup className="mr-4">
             <Label for="name">Name</Label>
             <Input
@@ -163,7 +163,7 @@ class App extends Component {
           <Button color="primary" onClick={e => this.onSubmit(e)}>
             Submit
           </Button>
-        </Form>
+        </form>
         <br />
         {/* table for user data */}
         <Table>
