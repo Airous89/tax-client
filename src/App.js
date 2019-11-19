@@ -113,7 +113,10 @@ class App extends Component {
       },
       body: newItems[0]
     })
-      .then(res => res.json())
+      .then(res => {
+      console.log(res)
+      return res.json()
+    })
       .then(response => alert("Success", JSON.stringify(response)))
       .catch(error => console.log("Error", error));
     this._refreshList();
