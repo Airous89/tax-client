@@ -111,7 +111,7 @@ class App extends Component {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(newItems)
+      body: newItems[0]
     })
       .then(res => res.json())
       .then(response => alert("Success", JSON.stringify(response)))
